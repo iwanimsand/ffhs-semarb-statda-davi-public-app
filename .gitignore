@@ -1,0 +1,14 @@
+
+*.iml
+.idea/
+
+.ipynb_checkpoints
+__pycache__
+
+venv
+*.pyc
+.DS_Store
+.env
+
+gunicorn.pid
+log/

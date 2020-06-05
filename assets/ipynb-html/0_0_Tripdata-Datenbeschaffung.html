@@ -13189,7 +13189,7 @@ Iwan Imsand</p>
 <span class="sd">        :param filename_rename: lambda function for renaming files when extracting</span>
 <span class="sd">        &quot;&quot;&quot;</span>
 
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Downloading </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">url</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Downloading </span><span class="si">{}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">url</span><span class="p">))</span>
 
         <span class="n">content</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
         <span class="n">zip_ref</span> <span class="o">=</span> <span class="n">ZipFile</span><span class="p">(</span><span class="n">BytesIO</span><span class="p">(</span><span class="n">content</span><span class="o">.</span><span class="n">content</span><span class="p">))</span>
@@ -13386,173 +13386,257 @@ Iwan Imsand</p>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Downloading https://s3.amazonaws.com/tripdata/201307-201402-citibike-tripdata.zip
-Downloading https://s3.amazonaws.com/tripdata/201307-citibike-tripdata.zip
+<pre>Downloading https://s3.amazonaws.com/tripdata/201308-citibike-tripdata.zip
+Downloading https://s3.amazonaws.com/tripdata/201307-201402-citibike-tripdata.zip
 Downloading https://s3.amazonaws.com/tripdata/201306-citibike-tripdata.zip
-Downloading https://s3.amazonaws.com/tripdata/201308-citibike-tripdata.zip
+Downloading https://s3.amazonaws.com/tripdata/201307-citibike-tripdata.zip
+Downloading https://s3.amazonaws.com/tripdata/201311-citibike-tripdata.zip
 Downloading https://s3.amazonaws.com/tripdata/201310-citibike-tripdata.zip
 Downloading https://s3.amazonaws.com/tripdata/201309-citibike-tripdata.zip
-Downloading https://s3.amazonaws.com/tripdata/201311-citibike-tripdata.zip
-Downloading https://s3.amazonaws.com/tripdata/201312-citibike-tripdata.zip
 Downloading https://s3.amazonaws.com/tripdata/201402-citibike-tripdata.zip
 Downloading https://s3.amazonaws.com/tripdata/201401-citibike-tripdata.zip
-Downloading https://s3.amazonaws.com/tripdata/201403-citibike-tripdata.zip
-Downloading https://s3.amazonaws.com/tripdata/201405-citibike-tripdata.zip
-Downloading https://s3.amazonaws.com/tripdata/201407-citibike-tripdata.zip
 Downloading https://s3.amazonaws.com/tripdata/201404-citibike-tripdata.zip
-Downloading https://s3.amazonaws.com/tripdata/201410-citibike-tripdata.zip
+Downloading https://s3.amazonaws.com/tripdata/201312-citibike-tripdata.zip
+Downloading https://s3.amazonaws.com/tripdata/201405-citibike-tripdata.zip
+
+Downloading https://s3.amazonaws.com/tripdata/201403-citibike-tripdata.zip
+
 Downloading https://s3.amazonaws.com/tripdata/201406-citibike-tripdata.zip
+
+Downloading https://s3.amazonaws.com/tripdata/201407-citibike-tripdata.zip
 Downloading https://s3.amazonaws.com/tripdata/201408-citibike-tripdata.zip
+
 Downloading https://s3.amazonaws.com/tripdata/201409-citibike-tripdata.zip
-Downloading https://s3.amazonaws.com/tripdata/201412-citibike-tripdata.zip
+Downloading https://s3.amazonaws.com/tripdata/201410-citibike-tripdata.zip
+
+
+
+
+
 Downloading https://s3.amazonaws.com/tripdata/201411-citibike-tripdata.zip
-Downloading https://s3.amazonaws.com/tripdata/201504-citibike-tripdata.zip
+Downloading https://s3.amazonaws.com/tripdata/201412-citibike-tripdata.zip
+Downloading https://s3.amazonaws.com/tripdata/201502-citibike-tripdata.zip
 Downloading https://s3.amazonaws.com/tripdata/201503-citibike-tripdata.zip
 Downloading https://s3.amazonaws.com/tripdata/201505-citibike-tripdata.zip
-Downloading https://s3.amazonaws.com/tripdata/201502-citibike-tripdata.zip
-Downloading https://s3.amazonaws.com/tripdata/201501-citibike-tripdata.zip
 Downloading https://s3.amazonaws.com/tripdata/201506-citibike-tripdata.zip
-Downloading https://s3.amazonaws.com/tripdata/201510-citibike-tripdata.zip
+Downloading https://s3.amazonaws.com/tripdata/201504-citibike-tripdata.zip
+
+
 Downloading https://s3.amazonaws.com/tripdata/201512-citibike-tripdata.zip
+
 Downloading https://s3.amazonaws.com/tripdata/201511-citibike-tripdata.zip
+
+Downloading https://s3.amazonaws.com/tripdata/201510-citibike-tripdata.zip
+
+
+Downloading https://s3.amazonaws.com/tripdata/201501-citibike-tripdata.zip
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Downloading https://s3.amazonaws.com/tripdata/201507-citibike-tripdata.zip
 Downloading https://s3.amazonaws.com/tripdata/201509-citibike-tripdata.zip
 Downloading https://s3.amazonaws.com/tripdata/201508-citibike-tripdata.zip
-Downloading https://s3.amazonaws.com/tripdata/201507-citibike-tripdata.zip
-Extracting 2014-02 - Citi Bike trip data.csv from https://s3.amazonaws.com/tripdata/201402-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201402-citibike-tripdata.csv
-Downloading https://s3.amazonaws.com/tripdata/201601-citibike-tripdata.zip
+
+
+
 Extracting 201502-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201502-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201502-citibike-tripdata.csv
+Downloading https://s3.amazonaws.com/tripdata/201601-citibike-tripdata.zip
+
+Extracting 2014-01 - Citi Bike trip data.csv from https://s3.amazonaws.com/tripdata/201401-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201401-citibike-tripdata.csv
 Extracting 201501-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201501-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201501-citibike-tripdata.csv
 Downloading https://s3.amazonaws.com/tripdata/201602-citibike-tripdata.zip
+
 Downloading https://s3.amazonaws.com/tripdata/201603-citibike-tripdata.zip
-Extracting 201503-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201503-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201503-citibike-tripdata.csv
-Downloading https://s3.amazonaws.com/tripdata/201604-citibike-tripdata.zip
-Extracting 2013-11 - Citi Bike trip data.csv from https://s3.amazonaws.com/tripdata/201311-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201311-citibike-tripdata.csv
-Downloading https://s3.amazonaws.com/tripdata/201605-citibike-tripdata.zip
-Extracting 2014-01 - Citi Bike trip data.csv from https://s3.amazonaws.com/tripdata/201401-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201401-citibike-tripdata.csv
-Downloading https://s3.amazonaws.com/tripdata/201606-citibike-tripdata.zip
-Extracting 201601-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201601-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201601-citibike-tripdata.csv
-Downloading https://s3.amazonaws.com/tripdata/201607-citibike-tripdata.zip
-Extracting 201508-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201508-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201508-citibike-tripdata.csv
-Downloading https://s3.amazonaws.com/tripdata/201608-citibike-tripdata.zip
-Extracting 201603-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201603-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201603-citibike-tripdata.csv
-Extracting 2013-12 - Citi Bike trip data.csv from https://s3.amazonaws.com/tripdata/201312-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201312-citibike-tripdata.csv
-Downloading https://s3.amazonaws.com/tripdata/201609-citibike-tripdata.zip
-Downloading https://s3.amazonaws.com/tripdata/201610-citibike-tripdata.zip
-Extracting 201507-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201507-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201507-citibike-tripdata.csv
-Extracting 201411-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201411-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201411-citibike-tripdata.csv
-Downloading https://s3.amazonaws.com/tripdata/201611-citibike-tripdata.zip
-Downloading https://s3.amazonaws.com/tripdata/201612-citibike-tripdata.zip
-Extracting 2013-08 - Citi Bike trip data.csv from https://s3.amazonaws.com/tripdata/201308-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201308-citibike-tripdata.csv
-Downloading https://s3.amazonaws.com/tripdata/201701-citibike-tripdata.csv.zip
-Extracting 201410-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201410-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201410-citibike-tripdata.csv
+
 Extracting 201412-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201412-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201412-citibike-tripdata.csv
-Downloading https://s3.amazonaws.com/tripdata/201702-citibike-tripdata.csv.zip
-Downloading https://s3.amazonaws.com/tripdata/201703-citibike-tripdata.csv.zip
-Extracting 201506-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201506-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201506-citibike-tripdata.csv
-Downloading https://s3.amazonaws.com/tripdata/201704-citibike-tripdata.csv.zip
-Extracting 201606-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201606-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201606-citibike-tripdata.csv
-Extracting 201612-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201612-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201612-citibike-tripdata.csv
-Downloading https://s3.amazonaws.com/tripdata/201705-citibike-tripdata.csv.zip
-Downloading https://s3.amazonaws.com/tripdata/201706-citibike-tripdata.csv.zip
-Extracting 201605-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201605-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201605-citibike-tripdata.csv
-Extracting 201604-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201604-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201604-citibike-tripdata.csv
-Downloading https://s3.amazonaws.com/tripdata/201707-citibike-tripdata.csv.zip
-Downloading https://s3.amazonaws.com/tripdata/201708-citibike-tripdata.csv.zip
-Extracting 2014-06 - Citi Bike trip data.csv from https://s3.amazonaws.com/tripdata/201406-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201406-citibike-tripdata.csv
-Extracting 201703-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201703-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201703-citibike-tripdata.csv
-Downloading https://s3.amazonaws.com/tripdata/201709-citibike-tripdata.csv.zip
-Extracting 201702-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201702-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201702-citibike-tripdata.csv
-Downloading https://s3.amazonaws.com/tripdata/201710-citibike-tripdata.csv.zip
-Downloading https://s3.amazonaws.com/tripdata/201711-citibike-tripdata.csv.zip
-Extracting 201701-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201701-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201701-citibike-tripdata.csv
-Extracting 2014-04 - Citi Bike trip data.csv from https://s3.amazonaws.com/tripdata/201404-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201404-citibike-tripdata.csv
-Downloading https://s3.amazonaws.com/tripdata/201712-citibike-tripdata.csv.zip
-Downloading https://s3.amazonaws.com/tripdata/201801-citibike-tripdata.csv.zip
-Extracting 2014-03 - Citi Bike trip data.csv from https://s3.amazonaws.com/tripdata/201403-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201403-citibike-tripdata.csv
-Extracting 201711-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201711-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201711-citibike-tripdata.csv
-Downloading https://s3.amazonaws.com/tripdata/201802-citibike-tripdata.csv.zip
-Extracting 201706-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201706-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201706-citibike-tripdata.csv
-Extracting 201801-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201801-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201801-citibike-tripdata.csv
-Extracting 201409-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201409-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201409-citibike-tripdata.csv
-Downloading https://s3.amazonaws.com/tripdata/201803-citibike-tripdata.csv.zip
-Downloading https://s3.amazonaws.com/tripdata/201804-citibike-tripdata.csv.zip
-Extracting 201712-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201712-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201712-citibike-tripdata.csv
-Downloading https://s3.amazonaws.com/tripdata/201805-citibike-tripdata.csv.zip
-Downloading https://s3.amazonaws.com/tripdata/201806-citibike-tripdata.csv.zip
-Downloading https://s3.amazonaws.com/tripdata/201807-citibike-tripdata.csv.zip
+Downloading https://s3.amazonaws.com/tripdata/201604-citibike-tripdata.zip
+
+Extracting 201503-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201503-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201503-citibike-tripdata.csv
+Downloading https://s3.amazonaws.com/tripdata/201605-citibike-tripdata.zip
+
+Extracting 201601-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201601-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201601-citibike-tripdata.csv
+Downloading https://s3.amazonaws.com/tripdata/201606-citibike-tripdata.zip
+
+Extracting 201411-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201411-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201411-citibike-tripdata.csv
+Downloading https://s3.amazonaws.com/tripdata/201607-citibike-tripdata.zip
+
+Extracting 201603-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201603-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201603-citibike-tripdata.csv
+Downloading https://s3.amazonaws.com/tripdata/201608-citibike-tripdata.zip
+
 Extracting 201602-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201602-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201602-citibike-tripdata.csv
-Downloading https://s3.amazonaws.com/tripdata/201808-citibike-tripdata.csv.zip
-Extracting 201610-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201610-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201610-citibike-tripdata.csv
-Extracting 2014-08 - Citi Bike trip data.csv from https://s3.amazonaws.com/tripdata/201408-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201408-citibike-tripdata.csv
-Downloading https://s3.amazonaws.com/tripdata/201809-citibike-tripdata.csv.zip
+Downloading https://s3.amazonaws.com/tripdata/201609-citibike-tripdata.zip
+
 Extracting 2014-05 - Citi Bike trip data.csv from https://s3.amazonaws.com/tripdata/201405-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201405-citibike-tripdata.csv
-Downloading https://s3.amazonaws.com/tripdata/201810-citibike-tripdata.csv.zip
-Extracting 201306-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201306-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201306-citibike-tripdata.csv
-Downloading https://s3.amazonaws.com/tripdata/201811-citibike-tripdata.csv.zip
-Downloading https://s3.amazonaws.com/tripdata/201812-citibike-tripdata.csv.zip
-Extracting 201802-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201802-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201802-citibike-tripdata.csv
-Downloading https://s3.amazonaws.com/tripdata/201901-citibike-tripdata.csv.zip
-Extracting 201710-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201710-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201710-citibike-tripdata.csv
-Extracting 201803-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201803-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201803-citibike-tripdata.csv
-Extracting 201804-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201804-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201804-citibike-tripdata.csv
-Downloading https://s3.amazonaws.com/tripdata/201902-citibike-tripdata.csv.zip
-Downloading https://s3.amazonaws.com/tripdata/201903-citibike-tripdata.csv.zip
-Downloading https://s3.amazonaws.com/tripdata/201904-citibike-tripdata.csv.zip
-Extracting 201812-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201812-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201812-citibike-tripdata.csv
-Downloading https://s3.amazonaws.com/tripdata/201905-citibike-tripdata.csv.zip
-Extracting 2013-10 - Citi Bike trip data.csv from https://s3.amazonaws.com/tripdata/201310-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201310-citibike-tripdata.csv
-Downloading https://s3.amazonaws.com/tripdata/201906-citibike-tripdata.csv.zip
-Extracting 201504-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201504-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201504-citibike-tripdata.csv
-Extracting 201901-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201901-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201901-citibike-tripdata.csv
-Downloading https://s3.amazonaws.com/tripdata/201907-citibike-tripdata.csv.zip
-Downloading https://s3.amazonaws.com/tripdata/201908-citibike-tripdata.csv.zip
-Extracting 201902-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201902-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201902-citibike-tripdata.csv
-Downloading https://s3.amazonaws.com/tripdata/201909-citibike-tripdata.csv.zip
-Extracting 201809-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201809-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201809-citibike-tripdata.csv
-Downloading https://s3.amazonaws.com/tripdata/201910-citibike-tripdata.csv.zip
-Extracting 2013-07 - Citi Bike trip data.csv from https://s3.amazonaws.com/tripdata/201307-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201307-citibike-tripdata.csv
-Extracting 201705-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201705-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201705-citibike-tripdata.csv
-Downloading https://s3.amazonaws.com/tripdata/201911-citibike-tripdata.csv.zip
-Downloading https://s3.amazonaws.com/tripdata/201912-citibike-tripdata.csv.zip
-Extracting 201505-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201505-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201505-citibike-tripdata.csv
-Extracting 2014-07 - Citi Bike trip data.csv from https://s3.amazonaws.com/tripdata/201407-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201407-citibike-tripdata.csv
-Downloading https://s3.amazonaws.com/tripdata/202001-citibike-tripdata.csv.zip
-Extracting 201512-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201512-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201512-citibike-tripdata.csv
-Downloading https://s3.amazonaws.com/tripdata/202002-citibike-tripdata.csv.zip
-Extracting 2013-09 - Citi Bike trip data.csv from https://s3.amazonaws.com/tripdata/201309-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201309-citibike-tripdata.csv
-Extracting 201609-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201609-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201609-citibike-tripdata.csv
-Downloading https://s3.amazonaws.com/tripdata/202003-citibike-tripdata.csv.zip
 Extracting 201511-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201511-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201511-citibike-tripdata.csv
+Extracting 2013-07 - Citi Bike trip data.csv from https://s3.amazonaws.com/tripdata/201307-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201307-citibike-tripdata.csv
+Downloading https://s3.amazonaws.com/tripdata/201610-citibike-tripdata.zip
+
+Downloading https://s3.amazonaws.com/tripdata/201611-citibike-tripdata.zip
+
+Downloading https://s3.amazonaws.com/tripdata/201612-citibike-tripdata.zip
+
+Extracting 201508-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201508-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201508-citibike-tripdata.csv
+Extracting 2013-10 - Citi Bike trip data.csv from https://s3.amazonaws.com/tripdata/201310-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201310-citibike-tripdata.csv
+Downloading https://s3.amazonaws.com/tripdata/201701-citibike-tripdata.csv.zip
+
+Downloading https://s3.amazonaws.com/tripdata/201702-citibike-tripdata.csv.zip
+
+Extracting 2013-08 - Citi Bike trip data.csv from https://s3.amazonaws.com/tripdata/201308-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201308-citibike-tripdata.csv
+Extracting 2014-02 - Citi Bike trip data.csv from https://s3.amazonaws.com/tripdata/201402-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201402-citibike-tripdata.csv
+Extracting 201606-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201606-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201606-citibike-tripdata.csv
+Downloading https://s3.amazonaws.com/tripdata/201703-citibike-tripdata.csv.zip
+
+Extracting 2013-12 - Citi Bike trip data.csv from https://s3.amazonaws.com/tripdata/201312-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201312-citibike-tripdata.csv
+Downloading https://s3.amazonaws.com/tripdata/201704-citibike-tripdata.csv.zip
+
+Downloading https://s3.amazonaws.com/tripdata/201705-citibike-tripdata.csv.zip
+
+Extracting 201512-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201512-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201512-citibike-tripdata.csv
+Downloading https://s3.amazonaws.com/tripdata/201706-citibike-tripdata.csv.zip
+
+Downloading https://s3.amazonaws.com/tripdata/201707-citibike-tripdata.csv.zip
+
+Extracting 2013-11 - Citi Bike trip data.csv from https://s3.amazonaws.com/tripdata/201311-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201311-citibike-tripdata.csv
+Downloading https://s3.amazonaws.com/tripdata/201708-citibike-tripdata.csv.zip
+
+Extracting 201306-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201306-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201306-citibike-tripdata.csv
+Extracting 2014-04 - Citi Bike trip data.csv from https://s3.amazonaws.com/tripdata/201404-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201404-citibike-tripdata.csv
+Downloading https://s3.amazonaws.com/tripdata/201709-citibike-tripdata.csv.zip
+
+Extracting 201604-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201604-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201604-citibike-tripdata.csv
+Downloading https://s3.amazonaws.com/tripdata/201710-citibike-tripdata.csv.zip
+
+Extracting 201701-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201701-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201701-citibike-tripdata.csv
+Extracting 201702-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201702-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201702-citibike-tripdata.csv
+Downloading https://s3.amazonaws.com/tripdata/201711-citibike-tripdata.csv.zip
+
+Downloading https://s3.amazonaws.com/tripdata/201712-citibike-tripdata.csv.zip
+
+Downloading https://s3.amazonaws.com/tripdata/201801-citibike-tripdata.csv.zip
+
+Extracting 2014-03 - Citi Bike trip data.csv from https://s3.amazonaws.com/tripdata/201403-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201403-citibike-tripdata.csv
+Downloading https://s3.amazonaws.com/tripdata/201802-citibike-tripdata.csv.zip
+
+Extracting 201610-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201610-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201610-citibike-tripdata.csv
+Extracting 201703-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201703-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201703-citibike-tripdata.csv
+Downloading https://s3.amazonaws.com/tripdata/201803-citibike-tripdata.csv.zip
+
+Downloading https://s3.amazonaws.com/tripdata/201804-citibike-tripdata.csv.zip
+
+Extracting 201801-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201801-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201801-citibike-tripdata.csv
+Downloading https://s3.amazonaws.com/tripdata/201805-citibike-tripdata.csv.zip
+
+Extracting 201712-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201712-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201712-citibike-tripdata.csv
+Downloading https://s3.amazonaws.com/tripdata/201806-citibike-tripdata.csv.zip
+
+Extracting 201802-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201802-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201802-citibike-tripdata.csv
+Extracting 201711-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201711-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201711-citibike-tripdata.csv
+Extracting 201607-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201607-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201607-citibike-tripdata.csv
+Downloading https://s3.amazonaws.com/tripdata/201807-citibike-tripdata.csv.zip
+
+Downloading https://s3.amazonaws.com/tripdata/201808-citibike-tripdata.csv.zip
+
 Extracting 201611-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201611-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201611-citibike-tripdata.csv
-Downloading https://s3.amazonaws.com/tripdata/202004-citibike-tripdata.csv.zip
-Extracting 202004-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/202004-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/202004-citibike-tripdata.csv
-Extracting 201810-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201810-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201810-citibike-tripdata.csv
-Extracting 201807-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201807-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201807-citibike-tripdata.csv
-Extracting 202003-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/202003-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/202003-citibike-tripdata.csv
-Extracting 201907-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201907-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201907-citibike-tripdata.csv
+Downloading https://s3.amazonaws.com/tripdata/201809-citibike-tripdata.csv.zip
+
+Downloading https://s3.amazonaws.com/tripdata/201810-citibike-tripdata.csv.zip
+
+Extracting 201504-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201504-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201504-citibike-tripdata.csv
+Extracting 201710-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201710-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201710-citibike-tripdata.csv
+Downloading https://s3.amazonaws.com/tripdata/201811-citibike-tripdata.csv.zip
+
+Downloading https://s3.amazonaws.com/tripdata/201812-citibike-tripdata.csv.zip
+
+Extracting 201803-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201803-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201803-citibike-tripdata.csv
+Extracting 201506-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201506-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201506-citibike-tripdata.csv
+Downloading https://s3.amazonaws.com/tripdata/201901-citibike-tripdata.csv.zip
+
+Extracting 2013-09 - Citi Bike trip data.csv from https://s3.amazonaws.com/tripdata/201309-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201309-citibike-tripdata.csv
+Downloading https://s3.amazonaws.com/tripdata/201902-citibike-tripdata.csv.zip
+
+Extracting 201608-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201608-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201608-citibike-tripdata.csv
+Downloading https://s3.amazonaws.com/tripdata/201903-citibike-tripdata.csv.zip
+
+Extracting 201804-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201804-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201804-citibike-tripdata.csv
+Downloading https://s3.amazonaws.com/tripdata/201904-citibike-tripdata.csv.zip
+
+Extracting 201612-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201612-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201612-citibike-tripdata.csv
+Downloading https://s3.amazonaws.com/tripdata/201905-citibike-tripdata.csv.zip
+
+Downloading https://s3.amazonaws.com/tripdata/201906-citibike-tripdata.csv.zip
+
 Extracting 201805-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201805-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201805-citibike-tripdata.csv
-Extracting 201912-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201912-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201912-citibike-tripdata.csv
-Extracting 202002-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/202002-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/202002-citibike-tripdata.csv
-Extracting 201808-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201808-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201808-citibike-tripdata.csv
-Extracting 202001-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/202001-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/202001-citibike-tripdata.csv
+Downloading https://s3.amazonaws.com/tripdata/201907-citibike-tripdata.csv.zip
+
+Extracting 2014-08 - Citi Bike trip data.csv from https://s3.amazonaws.com/tripdata/201408-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201408-citibike-tripdata.csv
+Extracting 2014-06 - Citi Bike trip data.csv from https://s3.amazonaws.com/tripdata/201406-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201406-citibike-tripdata.csv
+Downloading https://s3.amazonaws.com/tripdata/201908-citibike-tripdata.csv.zip
+
+Downloading https://s3.amazonaws.com/tripdata/201909-citibike-tripdata.csv.zip
+
+Extracting 201901-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201901-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201901-citibike-tripdata.csv
+Extracting 201505-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201505-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201505-citibike-tripdata.csv
+Extracting 201707-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201707-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201707-citibike-tripdata.csv
+Downloading https://s3.amazonaws.com/tripdata/201910-citibike-tripdata.csv.zip
+
+Extracting 201507-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201507-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201507-citibike-tripdata.csv
+Downloading https://s3.amazonaws.com/tripdata/201911-citibike-tripdata.csv.zip
+
+Extracting 201410-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201410-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201410-citibike-tripdata.csv
+Extracting 201706-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201706-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201706-citibike-tripdata.csv
+Downloading https://s3.amazonaws.com/tripdata/201912-citibike-tripdata.csv.zip
+
+Downloading https://s3.amazonaws.com/tripdata/202001-citibike-tripdata.csv.zip
+
+Downloading https://s3.amazonaws.com/tripdata/202002-citibike-tripdata.csv.zip
+
+Downloading https://s3.amazonaws.com/tripdata/202003-citibike-tripdata.csv.zip
+
+Extracting 2014-07 - Citi Bike trip data.csv from https://s3.amazonaws.com/tripdata/201407-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201407-citibike-tripdata.csv
+Downloading https://s3.amazonaws.com/tripdata/202004-citibike-tripdata.csv.zip
+
 Extracting 201510-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201510-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201510-citibike-tripdata.csv
 Extracting 201509-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201509-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201509-citibike-tripdata.csv
-Extracting 201704-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201704-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201704-citibike-tripdata.csv
-Extracting 201911-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201911-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201911-citibike-tripdata.csv
-Extracting 201708-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201708-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201708-citibike-tripdata.csv
-Extracting 201908-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201908-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201908-citibike-tripdata.csv
-Extracting 201608-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201608-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201608-citibike-tripdata.csv
-Extracting 201903-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201903-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201903-citibike-tripdata.csv
-Extracting 201905-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201905-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201905-citibike-tripdata.csv
-Extracting 201709-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201709-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201709-citibike-tripdata.csv
 Extracting 201806-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201806-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201806-citibike-tripdata.csv
-Extracting 201707-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201707-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201707-citibike-tripdata.csv
+Extracting 201902-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201902-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201902-citibike-tripdata.csv
+Extracting 201609-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201609-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201609-citibike-tripdata.csv
+Extracting 201812-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201812-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201812-citibike-tripdata.csv
 Extracting 201906-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201906-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201906-citibike-tripdata.csv
-Extracting 201607-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201607-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201607-citibike-tripdata.csv
+Extracting 201708-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201708-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201708-citibike-tripdata.csv
+Extracting 202001-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/202001-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/202001-citibike-tripdata.csv
+Extracting 202002-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/202002-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/202002-citibike-tripdata.csv
+Extracting 202004-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/202004-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/202004-citibike-tripdata.csv
+Extracting 201605-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201605-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201605-citibike-tripdata.csv
+Extracting 201911-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201911-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201911-citibike-tripdata.csv
 Extracting 201811-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201811-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201811-citibike-tripdata.csv
-Extracting 201909-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201909-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201909-citibike-tripdata.csv
+Extracting 201912-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201912-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201912-citibike-tripdata.csv
+Extracting 201704-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201704-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201704-citibike-tripdata.csv
+Extracting 201907-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201907-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201907-citibike-tripdata.csv
+Extracting 201807-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201807-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201807-citibike-tripdata.csv
 Extracting 201904-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201904-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201904-citibike-tripdata.csv
+Extracting 201409-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201409-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201409-citibike-tripdata.csv
 Extracting 201910-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201910-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201910-citibike-tripdata.csv
+Extracting 201705-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201705-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201705-citibike-tripdata.csv
+Extracting 201709-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201709-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201709-citibike-tripdata.csv
+Extracting 201809-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201809-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201809-citibike-tripdata.csv
+Extracting 202003-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/202003-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/202003-citibike-tripdata.csv
+Extracting 201908-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201908-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201908-citibike-tripdata.csv
+Extracting 201903-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201903-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201903-citibike-tripdata.csv
+Extracting 201810-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201810-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201810-citibike-tripdata.csv
+Extracting 201909-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201909-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201909-citibike-tripdata.csv
+Extracting 201905-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201905-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201905-citibike-tripdata.csv
+Extracting 201808-citibike-tripdata.csv from https://s3.amazonaws.com/tripdata/201808-citibike-tripdata.csv.zip to ./../data/citibike/tripdata/src/201808-citibike-tripdata.csv
 Extracting 2014-02 - Citi Bike trip data.csv from https://s3.amazonaws.com/tripdata/201307-201402-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201402-citibike-tripdata.csv
 Extracting 2014-01 - Citi Bike trip data.csv from https://s3.amazonaws.com/tripdata/201307-201402-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201401-citibike-tripdata.csv
 Extracting 2013-12 - Citi Bike trip data.csv from https://s3.amazonaws.com/tripdata/201307-201402-citibike-tripdata.zip to ./../data/citibike/tripdata/src/201312-citibike-tripdata.csv

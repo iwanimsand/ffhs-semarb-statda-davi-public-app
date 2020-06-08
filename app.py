@@ -17,7 +17,14 @@ server = flask.Flask(__name__)
 app = dash.Dash(prevent_initial_callbacks=True,
                 suppress_callback_exceptions=False,
                 external_stylesheets=[dbc.themes.BOOTSTRAP],
-                server=server)
+                server=server,
+                meta_tags=[
+                    {'http-equiv': 'Cache-Control', 'content': 'max-age=0'},
+                    {'http-equiv': 'Cache-Control', 'content': 'no-cache'},
+                    {'http-equiv': 'expires', 'content': '0'},
+                    {'http-equiv': 'expires', 'content': 'Tue, 01 Jan 1980 1:00:00 GMT'},
+                    {'http-equiv': 'pragma', 'content': 'no-cache'}
+                ])
 
 app.layout = html.Div(
     [

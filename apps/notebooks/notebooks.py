@@ -100,6 +100,28 @@ notebooks = [
             '''
     },
     {
+        'id': 30,
+        'title': '3_0_SemArb-StatDa_Schaetzen-von-Parametern',
+        'src': '/assets/ipynb-html/3_0_SemArb-StatDa_Schaetzen-von-Parametern.html',
+        'body':
+            '''
+            **Schätzen von Parametern**
+            
+            Behandlung des Themas _Schätzen von Parametern_ für das Modul Statistische Datenanalyse.
+            '''
+    },
+    {
+        'id': 40,
+        'title': '4_0_SemArb-StatDa_Hypothesentest',
+        'src': '/assets/ipynb-html/4_0_SemArb-StatDa_Hypothesentest.html',
+        'body':
+            '''
+            **Hypothesentest**
+            
+            Behandlung des Themas _Hypothesentest_ für das Modul Statistische Datenanalyse.
+            '''
+    },
+    {
         'id': 50,
         'title': '5_0_SemArb-StatDa_Zeitreihenanalyse',
         'src': '/assets/ipynb-html/5_0_SemArb-StatDa_Zeitreihenanalyse.html',

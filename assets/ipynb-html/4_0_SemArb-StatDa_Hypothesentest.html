@@ -13134,7 +13134,7 @@ Iwan Imsand</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Daten-f&#252;r-die-Analysen">Daten f&#252;r die Analysen<a class="anchor-link" href="#Daten-f&#252;r-die-Analysen">&#182;</a></h2><p>Als Grundlage für nachfolgende Analyse, dienen die folgenden Daten:</p>
+<h2 id="Daten-f&#252;r-die-Analysen">Daten f&#252;r die Analysen<a class="anchor-link" href="#Daten-f&#252;r-die-Analysen">&#182;</a></h2><p>Als Grundlage für nachfolgende Analyse dienen die folgenden Daten:</p>
 <table>
 <thead><tr>
 <th>Dateiname</th>
@@ -13283,6 +13283,7 @@ $H_1$: Die Werte des Merkmals <code>Age 2020</code> sind nicht normalverteilt.</
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Histogramm&#39;</span><span class="p">)</span>
 
 <span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 
@@ -13425,7 +13426,7 @@ $H_1$: Die Werte des Merkmals <code>Age 2020</code> sind nicht normalverteilt.</
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Die in den visuellen Tests gewonnenen Erkenntnisse, werden in diesem Kapitel mit statistischen Tests üperprüft. Es soll ein Test auf Normalverteilung durchgeführt werden.</p>
+<p>Die in den visuellen Tests gewonnenen Erkenntnisse werden in diesem Kapitel mit statistischen Tests üperprüft. Es soll ein Test auf Normalverteilung durchgeführt werden.</p>
 
 </div>
 </div>
@@ -13440,7 +13441,7 @@ $H_1$: Die Werte des Merkmals <code>Age 2020</code> sind nicht normalverteilt.</
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Hier wird der Hypothesentest mit dem <a href="https://en.wikipedia.org/wiki/Shapiro%E2%80%93Wilk_test">Shapiro-Wilk Test</a> durchgeführt. Dabei wird $\alpha=0.05$ gewählt. Wenn $p&lt;\alpha$, dann kann $H_0$ nicht zurückgewiesen werden und die Daten sind normalverteilt. Ist $p&gt;\alpha$, dann wird $H_0$ zurückgewiesen und die Daten sind nicht normalverteilt.</p>
+<p>Hier wird der Hypothesentest mit dem <a href="https://en.wikipedia.org/wiki/Shapiro%E2%80%93Wilk_test">Shapiro-Wilk Test</a> durchgeführt. Dabei wird $\alpha=0.05$ gewählt. Wenn $p&gt;\alpha$, dann kann $H_0$ nicht zurückgewiesen werden und die Daten sind normalverteilt. Ist $p\leq\alpha$, dann wird $H_0$ zurückgewiesen und die Daten sind nicht normalverteilt.</p>
 
 </div>
 </div>
@@ -13509,7 +13510,7 @@ Die Daten sehen nicht normalverteilt aus -&gt; H0 wird zurückgewiesen!
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Hier wird der Hypothesentest mit dem <a href="https://en.wikipedia.org/wiki/D%27Agostino%27s_K-squared_test">D'Agostino's K-squared Test</a> durchgeführt. Dabei wird auch hier $\alpha=0.05$ gewählt. Wenn $p&lt;\alpha$, dann kann $H_0$ nicht zurückgewiesen werden und die Daten sind normalverteilt. Ist $p&gt;\alpha$, dann wird $H_0$ zurückgewiesen und die Daten sind nicht normalverteilt.</p>
+<p>Hier wird der Hypothesentest mit dem <a href="https://en.wikipedia.org/wiki/D%27Agostino%27s_K-squared_test">D'Agostino's K-squared Test</a> durchgeführt. Dabei wird auch hier $\alpha=0.05$ gewählt. Wenn $p&gt;\alpha$, dann kann $H_0$ nicht zurückgewiesen werden und die Daten sind normalverteilt. Ist $p\leq\alpha$, dann wird $H_0$ zurückgewiesen und die Daten sind nicht normalverteilt.</p>
 
 </div>
 </div>

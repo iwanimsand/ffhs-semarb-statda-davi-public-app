@@ -13134,7 +13134,7 @@ Iwan Imsand</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Daten-f&#252;r-die-Analysen">Daten f&#252;r die Analysen<a class="anchor-link" href="#Daten-f&#252;r-die-Analysen">&#182;</a></h2><p>Als Grundlage für nachfolgende Analyse, dienen die folgenden Daten:</p>
+<h2 id="Daten-f&#252;r-die-Analysen">Daten f&#252;r die Analysen<a class="anchor-link" href="#Daten-f&#252;r-die-Analysen">&#182;</a></h2><p>Als Grundlage für nachfolgende Analyse dienen die folgenden Daten:</p>
 <table>
 <thead><tr>
 <th>Dateiname</th>
@@ -13232,7 +13232,7 @@ Iwan Imsand</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Ausreisser</strong>: In der Analyse in 1_0_SemArb-StatDa_Deskriptive-Analyse.ipynb haben wir, bei der Untersuchung von Trip Duration festgestellt, dass Trips mit einer Dauer &gt;= 33.1min entfernt werden können, daher berücksichtigen wir nur eine Trip Duration &lt; 33.1min.</p>
+<p><strong>Ausreisser</strong>: In der Analyse in 1_0_SemArb-StatDa_Deskriptive-Analyse.ipynb haben wir bei der Untersuchung von Trip Duration festgestellt, dass Trips mit einer Dauer &gt;= 33.1min entfernt werden können, daher berücksichtigen wir nur eine Trip Duration &lt; 33.1min.</p>
 
 </div>
 </div>
@@ -13351,10 +13351,10 @@ Iwan Imsand</p>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>$\sigma^2$ ist unbekannt, daher wird geprüft ob</p>
 <ul>
-<li>A) $n\geq30$ und</li>
-<li>B) $\frac{N-n}{N-1}\geq0.9$ ist.</li>
+<li>A) $n\geq30$</li>
+<li>B) $\frac{N-n}{N-1}\geq0.9$</li>
 </ul>
-<p>$N$ ist unbekannt, doch man weiss, dass monatlich immer mindestens über 10'000 Trips gemacht werden, daher wird $N=10'000$ gewählt. Dies ist eher eine sehr kleine Schätzung, normalerweise sind monatlich über 1'000'000 Trips vorhanden.</p>
+<p>$N$ ist unbekannt, doch man weiss, dass monatlich immer mindestens über 10'000 Trips gefahren werden, daher wird $N=10'000$ gewählt. Dies ist eher eine sehr kleine Schätzung, normalerweise sind monatlich über 1'000'000 Trips vorhanden.</p>
 
 </div>
 </div>
@@ -13814,7 +13814,7 @@ var_X = 40.986617392368444
         <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Verteilung der Mittelwerte aus </span><span class="si">{}</span><span class="s1"> zufälligen Stichprobenziehungen der Grösse </span><span class="si">{}</span><span class="s1">, Konfidenz (1-alpha)=</span><span class="si">{}</span><span class="s1">, z=</span><span class="si">{:.4f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">loops</span><span class="p">,</span> <span class="n">samples_per_loop</span><span class="p">,</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">alpha</span><span class="p">),</span> <span class="n">confint</span><span class="p">[</span><span class="mi">2</span><span class="p">]))</span>
 
         <span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
-
+            
         <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 
     
@@ -13824,8 +13824,7 @@ var_X = 40.986617392368444
     <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;QQ-Plot - </span><span class="si">{}</span><span class="s1"> zufällige Stichprobenziehungen der Grösse </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">loops</span><span class="p">,</span> <span class="n">samples_per_loop</span><span class="p">))</span>
     <span class="n">sm</span><span class="o">.</span><span class="n">qqplot</span><span class="p">(</span><span class="n">means</span><span class="p">,</span> <span class="n">line</span><span class="o">=</span><span class="s1">&#39;s&#39;</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;b&#39;</span><span class="p">)</span>
 
-    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-    
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>    
 </pre></div>
 
     </div>
@@ -13886,7 +13885,7 @@ var_X = 40.986617392368444
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Beim den obigen Plots wurden die Mittelwerte von 50 zufälligen Stichprobenziehungen der Grösse 10 berechnet. Auch wurde das Konfidenzintervall für den Mittelwert der gesamten Stichprobe (n=5'000) eingezeichnet.</p>
+<p>Bei den obigen Plots wurden die Mittelwerte von 50 zufälligen Stichprobenziehungen der Grösse 10 berechnet. Auch wurde das Konfidenzintervall für den Mittelwert der gesamten Stichprobe (n=5'000) eingezeichnet.</p>
 <p>Es ist ersichtlich, dass</p>
 <ul>
 <li>die Verteilungsfunktion noch von der Standardnormalverteilung abweicht, aber sich annähert.</li>
@@ -13954,7 +13953,7 @@ var_X = 40.986617392368444
 <p>Es ist ersichtlich, dass</p>
 <ul>
 <li>die Verteilungsfunktion sich stark der Standardnormalverteilung angenähert hat.</li>
-<li>die Mittelwerte sind nun sehr nahe und der Mittelwert der Standardnormalverteilten Daten ist innerhalb des Konfidenzintervalls.</li>
+<li>die Mittelwerte sind nun sehr nahe und der Mittelwert der standardnormalverteilten Daten ist innerhalb des Konfidenzintervalls.</li>
 <li>im QQ-Plot sich sehr viele Punkte auf der roten Linie befinden.</li>
 </ul>
 
